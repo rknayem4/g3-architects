@@ -3,3 +3,127 @@
   margin:0;
   font-family:  "Work Sans", sans-serif;
 }
+/* shared style */
+.btn{
+  background-color: #FF900E;
+  color: #ffffff;
+  padding: 25px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+header{
+  background-color: #FF900E16;
+  max-width: 100%;
+}
+nav{
+  max-width: 1462px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding:30px 0 115px 0;
+}
+.logo h1{
+  font-size: 45px;
+  padding: 0 20px;
+}
+.navber ul {
+  display: flex;
+  gap: 30px;
+  padding:20px;
+}
+.navber ul li{
+  list-style: none;
+}
+.navber ul li a{
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #424242;
+}
+.navber ul li a:hover{
+  background-color: blanchedalmond;
+}
+/* for hero aria */
+.hero{
+  max-width: 1462px;
+  text-align: center;
+  padding: 30px;
+  margin: auto;
+}
+.hero .hero-title{
+  max-width: 772px;
+  margin: 20px auto;
+}
+.hero .hero-title h2{
+  font-size: 65px; 
+  margin-bottom:35px;
+}
+.hero-title p{
+  color:#727272;
+  line-height: 26px;
+  margin-bottom:53px;
+}
+.hero-img img{
+  width: 100%;
+}
+
+
+
+
+
+
+/* for desktop screen */
+@media screen and (max-width:1280px) {
+
+}
+/* for Laptop screen */
+@media screen and (max-width:992px) {
+  nav{
+  display: block;
+  text-align: center;
+}
+.navber ul li{
+  gap:15px;
+  margin:auto;
+}
+.navber ul {
+  gap:15px;
+}
+.hero .hero-title h2{
+  font-size: 45px;
+  margin-bottom:25px;
+}
+}
+
+
+/* for tablet screen */
+@media screen and (max-width:678px) {
+  .logo h1{
+  font-size: 35px;
+}
+.hero .hero-title h2{
+  font-size: 35px;
+  margin-bottom:15px;
+}
+.hero-title p{
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom:30px;
+}
+}
+
+/* for phone screen */
+@media screen and (max-width:420px) {
+    .logo h1{
+  font-size: 35px;
+}
+.hero .hero-title h2{
+  font-size: 25px;
+  margin-bottom:15px;
+}
+}
