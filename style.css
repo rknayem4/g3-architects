@@ -7,13 +7,23 @@
 .btn{
   background-color: #FF900E;
   color: #ffffff;
-  padding: 25px 20px;
+  padding: 20px 15px;
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 }
 
+.btn:hover{
+  background-color: #e07e0d;}
+.hero-title p,
+.team-text p
+{
+  color:#727272;
+  line-height: 26px;
+  margin-bottom:53px;
+}
 
 
 header{
@@ -63,18 +73,31 @@ nav{
   font-size: 65px; 
   margin-bottom:35px;
 }
-.hero-title p{
-  color:#727272;
-  line-height: 26px;
-  margin-bottom:53px;
-}
+
 .hero-img img{
   width: 100%;
 }
 
 
-
-
+/* team area */
+.team-container{
+  max-width: 1462px;
+  margin: 50px auto;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding:30px;
+}
+.team-container .team-imgs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.team-text h2{
+  font-size: 45px;
+  color: #131313;
+  margin-bottom:24px;
+}
 
 
 /* for desktop screen */
@@ -98,6 +121,17 @@ nav{
   font-size: 45px;
   margin-bottom:25px;
 }
+.team-container {
+  display: block;
+  text-align: center;
+}
+.team-container .team-imgs img{
+  margin: auto;
+  width: 100%;
+}
+.team-container .team-imgs{
+  margin-bottom: 40px;
+}
 }
 
 
@@ -114,6 +148,10 @@ nav{
   font-size: 16px;
   line-height: 20px;
   margin-bottom:30px;
+}
+.team-text h2{
+  font-size: 35px;
+  margin-bottom:14px;
 }
 }
 
