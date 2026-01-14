@@ -16,9 +16,13 @@
 }
 
 .btn:hover{
-  background-color: #e07e0d;}
+  background-color: #e07e0d;
+}
+
+
 .hero-title p,
-.team-text p
+.team-text p,
+.features-text-title p
 {
   color:#727272;
   line-height: 26px;
@@ -98,16 +102,113 @@ nav{
   color: #131313;
   margin-bottom:24px;
 }
+ /* features area */
+#features{
+  max-width: 1462px;
+  margin: 50px auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.features-text-title{
+  max-width: 682px;
+  margin-bottom: 30px;
+}
+.features-text-title h3{
+  font-size: 45px;
+  border-left:5px solid #FF900E;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+.features-card-container .features-card{
+  max-width: 586px;
+  padding: 30px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px #13131310;
+}
+.features-card h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.features-card p
+{
+  color:#727272;
+  line-height: 26px;
+}
+.features-model .model-exp{
+  background-color: #FF900E;
+  text-align: center;
+  max-width: 300px;
+  padding: 46px;
+  border-radius: 10px ;
+  position: relative;
+  left: -100px;
+  top: -100px;
+}
+.model-exp h5{
+  font-size: 40px ;
+  color: #ffffff;
+}
+.model-exp span{
+  font-size: 20px ;
+  color: #ffffff;
+}
+
+
+
+
+#facts{
+  max-width: 1462px;
+  margin: 50px auto;
+}
+
+
+
+
+
+
+
+
 
 
 /* for desktop screen */
 @media screen and (max-width:1280px) {
+#features{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.features-model .model-exp{
+  background-color: #FF900E;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px ;
+  position: relative;
+  left: 0px;
+  top: -100px;
+  margin: auto;
+}
+.features-text {
+  width: 95%;
+  margin: auto;
+}
+.features-model .model-img img{
+  width: 90%;
+  align-items: center;
+} 
+.features-text-title,
+.features-card{
+  margin: auto;
+}
 
 }
 /* for Laptop screen */
 @media screen and (max-width:992px) {
   nav{
-  display: block;
+    flex-direction: column;
   text-align: center;
 }
 .navber ul li{
