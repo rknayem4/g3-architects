@@ -137,22 +137,24 @@ nav{
   color:#727272;
   line-height: 26px;
 }
+.features-model {
+  /* display: inline; */
+}
 .features-model .model-exp{
   background-color: #FF900E;
   text-align: center;
-  max-width: 300px;
-  padding: 46px;
+  width: 30%;
+  padding: 5%;
   border-radius: 10px ;
   position: relative;
   left: -100px;
   top: -100px;
 }
 .model-exp h5{
-  font-size: 40px ;
+  font-size: 3rem ;
   color: #ffffff;
 }
 .model-exp span{
-  font-size: 20px ;
   color: #ffffff;
 }
 
@@ -161,15 +163,84 @@ nav{
 
 #facts{
   max-width: 1462px;
-  margin: 50px auto;
+  margin: 50px auto 200px auto;
+  /* display: none; */
+}
+.facts-title {
+  max-width: 600px;
+  padding: 30px;
+  margin: 30px 0;
+}
+.facts-title h2{
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+.facts-title p{
+  line-height: 24px;
+  color: #727272;
+}
+.facts-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.facts-card {
+  border: 1px solid #FF900E;
+  width: 200px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.facts-card h6{
+  font-size: 45px;
 }
 
 
+#sponsor {
+  max-width: 1462px;
+  margin: 50px auto;
+}
+.sponsor-title{
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+.sponsor-title h3{
+  font-size: 45px;
+  margin-bottom: 30px;
 
+}
+.sponsor-title p{
+  margin-bottom: 30px;
+  color: #727272;
+}
 
+.sponsor-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content:space-around ;
+  text-align: center;
 
+}
+.sponsor-img img{
+  /* margin: auto; */
+}
+footer{
+  padding: 15%;
+}
+.footer{
+  background-color: #FFF4E7;
+  /* width: 95%;
+  padding: 50px 100px; */
+}
+.footer p{
+  padding: 10%;
+  text-align: center;
+  color: #727272;
 
-
+}
 
 
 
@@ -181,16 +252,7 @@ nav{
   align-items: center;
   text-align: center;
 }
-.features-model .model-exp{
-  background-color: #FF900E;
-  text-align: center;
-  padding: 30px;
-  border-radius: 10px ;
-  position: relative;
-  left: 0px;
-  top: -100px;
-  margin: auto;
-}
+
 .features-text {
   width: 95%;
   margin: auto;
@@ -202,8 +264,15 @@ nav{
 .features-text-title,
 .features-card{
   margin: auto;
+  text-align: center;
 }
-
+.features-model .model-exp{
+  position: static;
+  margin: auto;
+}
+.model-exp h5{
+  font-size: 2rem ;
+}
 }
 /* for Laptop screen */
 @media screen and (max-width:992px) {
@@ -232,6 +301,13 @@ nav{
 }
 .team-container .team-imgs{
   margin-bottom: 40px;
+}
+.facts-container {
+  grid-template-columns: repeat(2 , 1fr);
+  margin: auto;
+}
+.model-exp h5{
+  font-size: 28px;
 }
 }
 
@@ -264,5 +340,8 @@ nav{
 .hero .hero-title h2{
   font-size: 25px;
   margin-bottom:15px;
+}
+.navber ul li{
+  gap:5px;
 }
 }
